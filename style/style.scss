@@ -1,13 +1,17 @@
             @import "../style/blocks/var.scss";
             @import "..//style/blocks/main.scss";
             .header {
+                background-color: $background-color;
+                color: #fff;
+
+              &-box {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                background-color: #00000000;
-                height: 60px;
+                min-height: 60px;
+                flex-wrap: wrap;
+              }
                 &-logo {
-                    color: #fff;
                     font-weight: 900;
                     font-size: 20px;
                     line-height: 26px;
@@ -34,7 +38,7 @@
             .promo {
                 height: 530px;
                 background-image: url("../photo/bck.png");
-                background-color: #222222;
+                background-color: $background-color;
                 filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 1.25));
                 background-size: contain;
             }
@@ -85,11 +89,30 @@
                 color: $main-color;
                 background-color: #fff;
             }
-            
-            .categories {
-                background-color: #fff;
+
+            .main-title {
+              background-color: $background-color;
+              height: 580px;
+              color: #FFFFFF;
             }
-            
+
+            .title-me {
+              padding-top: 65px;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 48px;
+              line-height: 63px;
+            }
+
+             hr {
+               border-radius: 12px 12px 12px 12px;
+               border: none;
+               width: 90px;
+               height: 5px;
+               background-color: $main-color;
+               color: $main-color;
+            }
+
             .produsct {
                 background-color: #fff;
             }
